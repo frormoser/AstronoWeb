@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+h2 {
+    font: bold 14px sans-serif;
+}
+
+header, footer, nav, article, hgroup {
+    border: 1px solid white;
+    display: block;
+}
+
+body {
+    text-align: center;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6142f7ea-475e-4d5d-af0d-4085272f9901/de5hc7e-f01b575e-ec95-4239-8f6c-c9560d0350b6.png);
+}
+
+.agrupar {
+    width: 960px;
+    border: 1px solid black;
+    margin: 15px auto;
+}
+.cabecera{
+    background: #2c0074;
+    border: 1px solid rgb(36, 4, 219);
+    padding: 20px;
+}
+
+.cabecera h1 {
+    text-align: left;
+}
+.menu {
+    background: #470377;
+    padding: 5px 15px;
+    text-align: left;
+}
+
+.menu li {
+    list-style: none;
+    padding: 5px 15px; 
+    font: bold 16px sans;
+    display: inline-block;
+    color:aliceblue;
+}
+.seccion {
+    margin: 20px;
+    width:60%;
+    float: left
+}
+
+article {
+    background: #0c007a;
+    border: 1px solid #9999;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+time {
+    color: rgb(0, 247, 255);
+}
+
+article footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.columna {
+    width: 30%;
+    float: left;
+    margin: 20px 0;
+}
+
+.columna blockquote {
+    border: 1px solid white;
+    padding: 40px;
+    background: #0b0166;
+    margin-bottom: 20px;
+}
+
+.pie {
+    clear: both;
+    padding: 20px;
+}
+
+img {
+    width: 520px;
+}
+aside img {
+    width: 285px;
+    margin-bottom: 20px;
+}

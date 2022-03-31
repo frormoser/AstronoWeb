@@ -6,77 +6,134 @@
         <meta name"description" content="" />
         <meta name="author" content="Fede"/>
         <meta name="keywords" content="Mi primer sitio, mi primer pagina, pagina web">
-        <link rel="stylesheet" href="estilos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
 
         <div class="agrupar">
-            <header class="cabecera">
-                <h1>AstronoWeb</h1>
-            </header>
     
-            <nav class="menu"> 
-                <ul>
-                    <li>Home</li>
-                    <li>Photos</li>
-                    <li>News</li>
-                </ul>        
-            </nav>
-    
-            <section class="seccion">
-                <article>
-                    <hgroup>
-                        <h1>What Is a Supernova?</h1>
-                        <h2></h2>    
-                    </hgroup>
-                    <time datetime="7/23/2021">article last updated July 23, 2021</time>
-                    <img src="https://c.tenor.com/ZlgXL_XDGNoAAAAC/supernova-blast.gif" alt="">
-                    <p>A supernova is the biggest explosion that humans have ever seen. Each blast is the extremely bright, super-powerful explosion of a star.
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">AstronoWeb</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header>
 
-                    </p>
-                    <h4>What causes a supernova?</h4>
-                    <p>Massive stars burn huge amounts of nuclear fuel at their cores, or centers. This produces tons of energy, so the center gets very hot. Heat generates pressure, and the pressure created by a star’s nuclear burning also keeps that star from collapsing
-                        When a massive star runs out of fuel, it cools off. This causes the pressure to drop. Gravity wins out, and the star suddenly collapses. Imagine something one million times the mass of Earth collapsing in 15 seconds! The collapse happens so quickly that it creates enormous shock waves that cause the outer part of the star to explode!
-                    </p>
-                    <footer>
-                        <p> Comments (8) </p>
-                    </footer>
-                </article>
-                <article>
-                    <hgroup>
-                        <h1>A second type of supernova</h1>    
-                    </hgroup>
-                    <time datetime="9/8/2021">article last updated July 23, 2021</time>
-                    <img src="https://spaceplace.nasa.gov/supernova/en/supernova4.en.jpg" alt="">
-                    <p>In this illustration, a white dwarf pulls matter from a companion star. Eventually, this will cause the white dwarf to explode. Image credit: STScI</p>
-                    <h4>How bright are supernovas?</h4>
-                    <p class="purple">These spectacular events can be so bright that they outshine their entire galaxies for a few days or even months. They can be seen across the universe.</p>
-                    <br>
-                    <address>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">Bibliography</a>
-                    </address>
-                    <footer>
-                        <p> Comments (21) </p>
-                    </footer>
-                </article>
-            </section>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('assets/img1.jpg')">
+          <div class="carousel-caption">
+            <h5>Simple images about space</h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('assets/img2.jpg')">
+          <div class="carousel-caption">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('assets/img3.jpg')">
+          <div class="carousel-caption">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+    <!-- Page Content -->
+    <section class="seccion">
+    <div class="card bg-dark bg-gradient">
+      <div class="card-body">
+        <h3 class="card-title">What Is a Supernova?</h3>
+        <img src="https://c.tenor.com/ZlgXL_XDGNoAAAAC/supernova-blast.gif" class="card-img-bottom" alt="...">
+        <p class="card-text">A supernova is the biggest explosion that humans have ever seen. Each blast is the extremely bright, super-powerful explosion of a star.
+        </p>
+      </p>
+      <h4>What causes a supernova?</h4>
+      <p>Massive stars burn huge amounts of nuclear fuel at their cores, or centers. This produces tons of energy, so the center gets very hot. Heat generates pressure, and the pressure created by a star’s nuclear burning also keeps that star from collapsing
+          When a massive star runs out of fuel, it cools off. This causes the pressure to drop. Gravity wins out, and the star suddenly collapses. Imagine something one million times the mass of Earth collapsing in 15 seconds! The collapse happens so quickly that it creates enormous shock waves that cause the outer part of the star to explode!
+      </p>
+      <footer>
+        <p> Comments (8) </p>
+    </footer>
+        <p class="card-text"><small class="text-muted">Article last updated July 23, 2021</small></p>
+      </div>
+    </div>
+
+    <br>
+    
+    <div class="card bg-dark bg-gradient">
+      <div class="card-body">
+        <h3 class="card-title">A second type of supernova</h3>
+        <img src="https://spaceplace.nasa.gov/supernova/en/supernova4.en.jpg" class="card-img-bottom" alt="...">
+        <p class="card-text">In this illustration, a white dwarf pulls matter from a companion star. Eventually, this will cause the white dwarf to explode. Image credit: STScI</p>
+      </p>
+      <h4>How bright are supernovas?</h4>
+      <p>These spectacular events can be so bright that they outshine their entire galaxies for a few days or even months. They can be seen across the universe.
+      </p>
+      <footer>
+        <p> Comments (21) </p>
+    </footer>
+        <p class="card-text"><small class="text-muted">Article last updated July 23, 2021</small></p>
+      </div>
+      <address>
+        <a href="https://spaceplace.nasa.gov/supernova/en/">Bibliography</a>
+    </address>
+    </div>
+    </section>
+    
             <aside class="columna">
-                <blockquote cite"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-                    1
+                <blockquote class="bg-blue bg-gradient" cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+                   <h4>Meteors</h4>
+A meteor is a space rock—or meteoroid—that enters Earth's atmosphere. As the space rock falls toward Earth, the resistance—or drag—of the air on the rock makes it extremely hot. 
                 </blockquote>
     
-                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">
-                    2
-                </blockquote>
                 <img src="https://i.pinimg.com/originals/9e/2e/3b/9e2e3b57992c4390f6f963f838b5b896.gif" alt="">
-                <blockquote cite"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-                    3
+                <blockquote class="bg-blue bg-gradient" cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+                  What we see is a "shooting star." That bright streak is not actually the rock, but rather the glowing hot air as the hot rock zips through the atmosphere.
+               </blockquote>
+
+                <img src="assets/meteor-shower.gif" alt="">
+
+                <blockquote class="bg-blue bg-gradient" cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">
+                  When Earth encounters many meteoroids at once, we call it a meteor shower.
                 </blockquote>
-    
-                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">
-                    4
-                </blockquote>
-                <img src="https://cdn.dribbble.com/users/968179/screenshots/3405612/accelerate-dribbble.gif" alt="">
 
             </aside>
     
@@ -85,11 +142,14 @@
                 </footer>
                 
         </div>
+  
 
         
-    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
     </body>
-</html>
+
+    </html>
 
 
 
